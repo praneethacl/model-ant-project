@@ -32,7 +32,7 @@
 
   <target name="test" depends="compile,test-compile">
     <mkdir dir="build/test-reports"/>
-    <jacoco:coverage enabled="${jacoco}" destfile="build/jacoco.exec">
+    <jacoco:coverage enabled="true" destfile="build/jacoco.exec">
       <junit printsummary="yes" haltonfailure="yes" fork="true" forkmode="once">
         <classpath>
           <fileset dir="lib" includes="*.jar" />
